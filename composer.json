@@ -1,5 +1,5 @@
 {
-    "name": "Keized/maintenance-bundle",
+    "name": "keized/maintenance-bundle",
     "type": "symfony-bundle",
     "description": "Keized MaintenanceBundle",
     "license": "MIT",
