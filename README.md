@@ -24,5 +24,5 @@ keized_maintenance.yaml
 
 ```
 keized_maintenance:
-    template: '/template/maintenance-custom.html'
+    template: 'templates/maintenance-custom.html'
 ```
