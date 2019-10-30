@@ -1,0 +1,25 @@
+{
+    "name": "Keized/maintenance-bundle",
+    "type": "symfony-bundle",
+    "description": "Keized MaintenanceBundle",
+    "license": "MIT",
+    "keywords": ["Symfony", "bundle", "maintenance"],
+    "authors": [
+        {
+            "name": "Kevin Fiseneck",
+            "email": "kevin.fiseneck@live.fr"
+        }
+    ],
+    "require": {
+        "symfony/framework-bundle": ">=2.6"
+    },
+    "require-dev": {
+        "symfony/phpunit-bridge": "^4.3"
+    },
+    "autoload":{
+        "psr-4": {
+            "Keized\\MaintenanceBundle\\": "",
+            "KeiZed\\MaintenanceBundle\\Tests\\": "tests/"
+         }
+    }
+}

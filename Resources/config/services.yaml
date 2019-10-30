@@ -1,0 +1,20 @@
+services:
+        keized_maintenance_service:
+            class: Keized\MaintenanceBundle\Service\MaintenanceService
+            arguments:
+                - '%kernel.project_dir%/public/.lock'
+
+        keized_maintenance_listener:
+            class: Keized\MaintenanceBundle\EventListener\MaintenanceListener
+            arguments:
+                - '%kernel.project_dir%/public/.lock'
+                - '%maintenance.template%'
+            tags:
+                - { name: kernel.event_listener, event: kernel.request, method: onKernelRequest }
+
+        keized_maintenance_command:
+            class: Keized\MaintenanceBundle\Command\MaintenanceCommand
+            arguments:
+                - '@keized_maintenance_service'
+            tags:
+                - { name: console.command }
