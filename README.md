@@ -16,7 +16,7 @@ $ php bin/console app:maintenance on
 ### Disable Maintenance
 
 ```
-$ php bin/console app:maintenance on
+$ php bin/console app:maintenance off
 ```
 
 # Configuration
@@ -26,5 +26,5 @@ keized_maintenance.yaml
 
 ```
 keized_maintenance:
-    template: 'templates/maintenance-custom.html'
+    template: '%kernel.project_dir%/templates/maintenance-custom.html'
 ```
